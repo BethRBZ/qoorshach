@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">qoorshach</string>
+    <string name="button">Решить</string>
+    <string name="startPoint">Начальная точка</string>
+    <string name="infelicity">Погрешность</string>
+    <string name="iterations">Количество итераций</string>
+    <string name="infelicityView">Вычисленная погрешность</string>
+    <string name="functionView">Значение функции</string>
+    <string name="iterationsView">Количество выполненных итераций</string>
+    <string name="radicalView">Корень уравнения</string>
+    <string name="zagolovok">\t\tМетод Ньютона\nдля уравнения <b><i>sin(x)</i></b></string>
+    <string name="edittexts">Введите значение</string>
+</resources>

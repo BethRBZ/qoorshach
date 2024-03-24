@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffafa"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="@string/zagolovok"
+        android:textColor="#2b2b2b"
+        android:textSize="30sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/editIterations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/edittexts"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColorHint="#2b2b2b"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="@+id/editStartPoint"
+        app:layout_constraintTop_toBottomOf="@+id/editInfelicity" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="127dp"
+        android:layout_height="78dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="70dp"
+        android:background="#95877f7f"
+        android:onClick="buttonClick"
+        android:text="@string/button"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editStartPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="@string/edittexts"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textColorHint="#2b2b2b"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editInfelicity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/edittexts"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textColorHint="#2b2b2b"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="@+id/editStartPoint"
+        app:layout_constraintTop_toBottomOf="@+id/editStartPoint" />
+
+    <TextView
+        android:id="@+id/radicalView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="@string/radicalView"
+        android:textColor="#2b2b2b"
+        android:textSize="22.5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/errorView" />
+
+    <TextView
+        android:id="@+id/infelicityView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="28dp"
+        android:text="@string/infelicityView"
+        android:textColor="#2b2b2b"
+        android:textSize="22.5sp"
+        app:layout_constraintEnd_toEndOf="@+id/radicalView"
+        app:layout_constraintHorizontal_bias="0.987"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iterationsView" />
+
+    <TextView
+        android:id="@+id/functionView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="20dp"
+        android:text="@string/functionView"
+        android:textColor="#2b2b2b"
+        android:textSize="22.5sp"
+        app:layout_constraintEnd_toEndOf="@+id/radicalView"
+        app:layout_constraintTop_toBottomOf="@+id/radicalView" />
+
+    <TextView
+        android:id="@+id/iterationsView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="20dp"
+        android:text="@string/iterationsView"
+        android:textColor="#2b2b2b"
+        android:textSize="22.5sp"
+        app:layout_constraintEnd_toEndOf="@+id/radicalView"
+        app:layout_constraintTop_toBottomOf="@+id/functionView" />
+
+    <TextView
+        android:id="@+id/errorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textColor="#F44336"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editIterations" />
+
+    <TextView
+        android:id="@+id/startPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/startPoint"
+        android:textColor="#2b2b2b"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/editStartPoint"
+        app:layout_constraintStart_toStartOf="@+id/editStartPoint" />
+
+    <TextView
+        android:id="@+id/infelicity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/infelicity"
+        android:textColor="#2b2b2b"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/editInfelicity"
+        app:layout_constraintStart_toStartOf="@+id/editInfelicity" />
+
+    <TextView
+        android:id="@+id/iterations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/iterations"
+        android:textColor="#2b2b2b"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/editIterations"
+        app:layout_constraintStart_toStartOf="@+id/editIterations" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
